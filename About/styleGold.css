@@ -1,11 +1,10 @@
 body {
     padding: 0;
-    margin: 0
+    margin: 0;
 }
 
 .container {
     height: 100vh;
-    background-image: url('images/złotaKarta.jpg');
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
@@ -14,7 +13,8 @@ body {
 }
 
 .up {
-    bottom: 10%;
+    height: 25vh;
+    box-sizing: border-box;
 }
 
 .gold {
@@ -23,15 +23,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
-    height: 30%;
+    height: 45vh;
     background-color: rgba(218, 165, 32, .9);
     box-shadow: 0 0 0 10px black, 0 0 0 20px goldenrod;
+    box-sizing: border-box;
 }
 
 .down {
-    bottom: 15%;
-    left: 0;
+    height: 30vh;
     margin: auto;
+    box-sizing: border-box;
 }
 
 .img img {
