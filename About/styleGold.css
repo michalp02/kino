@@ -106,11 +106,6 @@
         background-position-y: 65%;
     }
 
-    .down {
-        bottom: 1%;
-        left: 2%;
-    }
-
 }
 
 @media(min-width: 1280px) and (orientation: landscape) {
