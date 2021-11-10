@@ -1,0 +1,57 @@
+@media(min-width: 1024px) and (orientation: portrait) {
+    .text p {
+        font-size: 28px;
+    }
+
+    .text p::first-letter {
+        font-size: 42px;
+    }
+
+    .text {
+        padding: 20px;
+    }
+}
+
+@media(orientation: landscape) {
+    .gold {
+        width: 40%;
+        height: 30%;
+        top: 60%;
+
+    }
+
+    .container {
+        background-size: 20%;
+        background-position-y: 65%;
+    }
+
+}
+
+@media(min-width: 1280px) and (orientation: landscape) {
+    .gold {
+        width: 50%;
+        height: 50%;
+        top: 50%;
+
+    }
+
+    .container {
+        background-position-y: center;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    .text p::first-letter {
+        font-size: 48px;
+    }
+
+    .down {
+        bottom: 5%;
+    }
+
+    .return {
+        display: block;
+    }
+}
