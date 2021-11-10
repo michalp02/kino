@@ -60,7 +60,7 @@
     text-decoration: none;
     background-color: #f7b633;
     color: white;
-    padding: 10px 20px;
+    padding: 5px 10px;
     font-family: 'Montserrat', sans-serif;
     transition: .5s;
 }
@@ -97,6 +97,7 @@
 @media(min-width: 1280px) and (orientation: landscape) {
     .return {
         display: block;
+        padding: 10px 20px;
     }
     .return::before{
         content: "Strona główna";
