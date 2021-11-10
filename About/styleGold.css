@@ -13,8 +13,6 @@ body {
 }
 
 .up {
-    height: 25vh;
-    box-sizing: border-box;
 }
 
 .gold {
@@ -23,16 +21,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
-    height: 45vh;
     background-color: rgba(218, 165, 32, .9);
     box-shadow: 0 0 0 10px black, 0 0 0 20px goldenrod;
-    box-sizing: border-box;
 }
 
 .down {
-    height: 30vh;
     margin: auto;
-    box-sizing: border-box;
 }
 
 .img img {
