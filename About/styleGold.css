@@ -9,8 +9,14 @@
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    width: 70%;
+    width: 100%;
     margin: auto;
+}
+
+.up {
+    top: 0;
+    left: 0;
+    bottom: 10%;
 }
 
 .gold {
@@ -38,11 +44,6 @@
     padding: 10px;
     text-align: center;
     margin: 0 auto;
-}
-
-.up {
-    top: 0;
-    left: 0;
 }
 
 .down {
