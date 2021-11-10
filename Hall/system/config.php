@@ -13,4 +13,11 @@ $config['db_user'] = 'root';
 $config['db_pass'] = '';
 $config['db_name'] = 'kino';
 
+// Nie zmieniaj kodu poniżej
+
+$db = @new MySQLi($config['db_host'], $config['db_user'], $config['db_pass'], $config['db_name']);
+
+if($db->errno)
+    die("Wystąpił błąd połączenia z bazą danych. Przepraszamy za niedogodność");
+
 ?>
