@@ -5,7 +5,7 @@ class Kino {
     protected $db;
 
     public function __construct($db) {
-        $this->$db = $db;
+        $this->db = $db;
     }
 
     public function uzytkownik($uid = nul) {
