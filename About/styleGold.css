@@ -10,9 +10,11 @@ body {
     background-position: center;
     width: 100%;
     margin: auto;
+    display: flex;
 }
 
 .up {
+    flex-wrap: wrap;
 }
 
 .gold {
@@ -23,10 +25,12 @@ body {
     width: 70%;
     background-color: rgba(218, 165, 32, .9);
     box-shadow: 0 0 0 10px black, 0 0 0 20px goldenrod;
+    flex-wrap: wrap;
 }
 
 .down {
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .img img {
