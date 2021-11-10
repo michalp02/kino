@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+require 'system/sys.php';
+
+
+
+?><!DOCTYPE html>
 <html lang="en">
 
 <head>
