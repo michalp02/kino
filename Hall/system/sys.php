@@ -16,5 +16,7 @@ if($db->errno)
 
 session_start();
 
+require 'Kino.php';
+$kino = new Kino($db);
 
 ?>
