@@ -1,0 +1,21 @@
+	 	 	 	 
+1.	Wymagane technologie 
+ 
+•	HTML  
+•	CSS/SCSS 
+•	RWD 
+•	JavaScript 
+•	Baza danych PHP
+ 
+3. System rezerwacji powinien składać się z następujących po sobie elementów (podstron): 
+ 
+a.	Bazy danych, w której znajdzie się baza użytkowników (email oraz hasło) 
+b.	Panelu logowania – weryfikacja za pomocą wyrażeń regularnych czy email ma prawidłową składnię i czy minimalne wymagania hasła (tj. min. 8 znaków, min. jedna duża litera, cyfra i znak specjalny) są spełnione. 
+c.	Panel wyboru kina (min. 3 miejscowości, w każdej inna liczba miejsc i inne seanse – wszelkie dane na temat kina zapisane za pomocą PHP) 
+d.	Panel wyboru seansu (min. 3 filmy) –
+e.	Wybór miejsca – sala kinowa wyświetlana jest na podstawie informacji zawartych w pliku o kinie
+f.	Po wybraniu miejsca powinna znaleźć się podsumowanie o zamówieniu i cenie biletów – sesja wyboru miejsca nie powinna trwać dłużej niż 10 minut. Po tym czasie strona powinna zrobić się nieaktywna.  
+g.	Opcjonalnie: po zatwierdzeniu wysyłany jest mail z potwierdzeniem rezerwacji i ceną. 
+ 
+	 	 	 	 
+ 

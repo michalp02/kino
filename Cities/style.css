@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap&subset=latin-ext');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    min-height: 200vh;
+    background-image: url('imges/katowice.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.wrapper main {
+    min-height: 200vh;
+    background-color: rgba(7, 13, 89, .9);
+    text-align: center;
+}
+
+.wrapper main .films {
+    width: 70%;
+    margin: auto;
+}
+
+.wrapper main .header h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #f7b633;
+    font-size: 32px;
+    line-height: 32vh;
+}
+
+.films .title h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #f7b633;
+    margin: 20px 0 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.films .title p {
+    color: white;
+    font-size: 14px;
+    line-height: 200%;
+    padding: 30px 0;
+}
+
+.films .title p::first-letter {
+    font-size: 28px;
+}
+
+.return {
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    text-decoration: none;
+    background-color: #f7b633;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    transition: .5s;
+}
+
+.return:hover {
+    color: #070d59;
+}
+
+@media(min-width: 1024px) {
+    .wrapper main .header h1 {
+        font-size: 72px;
+
+    }
+
+    .films .title h2 {
+        margin: 80px 0 50px;
+        font-size: 36px;
+    }
+
+    .films .title p {
+        font-size: 24px;
+    }
+
+    .films .title p::first-letter {
+        font-size: 48px;
+    }
+
+
+}
+
+@media(min-width: 1280px) and (orientation: landscape) {
+    .return {
+        display: block;
+    }
+}

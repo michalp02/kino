@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap&subset=latin-ext');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+    position: relative;
+    min-height: 100vh;
+}
+
+.cinemaName h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+div.cinemaImg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-image: url('./images/3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+div.cinemaName {
+    height: 30vh;
+    text-align: center;
+    background-color: rgba(7, 13, 89, .9);
+}
+
+div.cinemaName h1 {
+    line-height: 30vh;
+    color: #f7b633;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+@media(min-width: 1024px) {
+    div.cinemaName h1 {
+        font-size: 72px;
+        letter-spacing: 2px;
+    }
+}
+
+
+/* Choice */
+.cinemaFilms {
+    position: sticky;
+    top: 0;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1;
+    background-color: #f7b633;
+}
+
+.cinemaFilms div {
+    font-size: 8px;
+    margin: 2vh 1vh;
+    flex-basis: 20vh;
+    text-align: center;
+}
+
+
+.cinemaFilms div ul {
+    list-style-type: none;
+
+
+}
+
+.cinemaFilms div ul h3 {
+    padding: 5px;
+    color: #070d59;
+    cursor: pointer;
+}
+
+.cinemaFilms div ul li {
+    display: none;
+    padding: 10px 0;
+    background-color: #5893d4;
+
+}
+
+.cinemaFilms div ul:hover li {
+    display: block;
+    cursor: pointer;
+}
+
+.cinemaFilms ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+.cinemaFilms ul li a:hover {
+    color: #070d59;
+}
+
+@media(min-width:1024px) and (orientation: portrait) {
+    .cinemaFilms div {
+        font-size: 17px;
+        margin: 2vh 5vh;
+        flex-basis: 25vh;
+    }
+}
+
+@media(min-width: 533px) and (orientation: landscape) {
+    .cinemaFilms div {
+        font-size: 10px;
+        margin: 1vh 5vh;
+        flex-basis: 25vh;
+    }
+}
+
+@media(min-width: 1366px) and (orientation: landscape) {
+    .cinemaFilms div {
+        font-size: 24px;
+        margin: 1vh 10vh;
+    }
+
+    .cinemaFilms div ul h3 {
+        padding: 10px;
+    }
+}
+
+/* Description */
+
+.description {
+    min-height: 100vh;
+    padding-top: 8vh;
+}
+
+.description div {
+    width: 80%;
+    margin: auto;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+.description div p {
+    color: #070d59;
+    font-size: 10px;
+    line-height: 200%;
+}
+
+.description div p::first-letter {
+    font-size: 34px;
+}
+
+@media(min-width: 360px) and (orientation: portrait) {
+    .description div p {
+        font-size: 12px;
+
+    }
+
+    .description div p::first-letter {
+        font-size: 36px;
+    }
+}
+
+@media(min-width: 1024px) and (orientation: portrait) {
+    .description div p {
+        font-size: 30px;
+
+    }
+
+    .description div p::first-letter {
+        font-size: 54px;
+    }
+}
+
+@media(min-width: 640px) and (orientation: landscape) {
+
+
+    .description div p {
+        font-size: 12px;
+    }
+
+    .description div p::first-letter {
+        font-size: 36px;
+    }
+}
+
+@media(min-width: 1366px) and (orientation: landscape) {
+    .description div {
+        width: 70%;
+
+    }
+
+    .description div p {
+        font-size: 24px;
+    }
+
+    .description div p::first-letter {
+        font-size: 48px;
+    }
+}
+
+/* Photos */
+.photos {
+    min-height: 100vh;
+    background-color: #1f3c88;
+    text-align: center;
+}
+
+.photos h1 {
+    padding-top: 60px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+.photos h4 {
+    padding-top: 90px;
+    color: #f7b633;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.photos .blackPhotos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+
+
+.blackPhotos img {
+    width: 95%;
+}
+
+.photos div:nth-child(1) {
+    order: 1;
+}
+
+@media(min-width: 1024px) and (orientation: portrait) {
+    .photos h1 {
+        font-size: 42px;
+    }
+
+    .photos h4 {
+        font-size: 28px;
+    }
+}
+
+@media(orientation: landscape) {
+    .photos .blackPhotos {
+        display: flex;
+        margin-top: 50px;
+        flex-direction: row;
+    }
+
+    .photos div:nth-child(1) {
+        order: -1;
+    }
+
+    .photos .blackPhotos div {
+        flex-basis: calc(100% / 3);
+    }
+
+    .blackPhotos img {
+        width: 95%;
+    }
+}
+
+@media(min-width: 1366px) and (orientation: landscape) {
+    .photos h1 {
+        font-size: 42px;
+    }
+
+    .photos h4 {
+        font-size: 28px;
+    }
+}
+
+/* Info */
+
+.info {
+    min-height: 95vh;
+    background-image: url('images/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.info .important {
+    background-color: rgba(7, 13, 89, .8);
+    min-height: 95vh;
+    padding: 40px 70px 0;
+
+}
+
+.info .important h1 {
+    color: #f7b633;
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info .important h3 {
+    color: #f7b633;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 40px 0;
+}
+
+.info .important ul {
+    list-style: none;
+}
+
+.info .important ul li,
+.info .important p {
+    color: white;
+    font-size: 12px;
+    line-height: 200%;
+}
+
+@media(min-width: 1024px) and (orientation: portrait) {
+    .info .important h1 {
+        font-size: 52px;
+    }
+
+    .info .important h3 {
+        font-size: 32px;
+    }
+
+    .info .important ul li,
+    .info .important p {
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 1366px) and (orientation: landscape) {
+    .info .important h1 {
+        font-size: 52px;
+    }
+
+    .info .important h3 {
+        font-size: 32px;
+    }
+
+    .info .important ul li,
+    .info .important p {
+        font-size: 18px;
+    }
+}
+
+/* footer */
+footer {
+    min-height: 5vh;
+    background-color: #070d59;
+    text-align: center;
+}
+
+footer p {
+    line-height: 5vh;
+    color: white;
+    font-size: 12px;
+}
+
+@media(min-width: 1024px) and (orientation: portrait) {
+    footer p {
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 1366px) and (orientation: landscape) {
+    footer p {
+        font-size: 16px;
+    }
+}
