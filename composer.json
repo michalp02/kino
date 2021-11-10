@@ -1,0 +1,23 @@
+{
+	"name": "michalp02/kino",
+	"description": "Kino",
+	"keywords": ["kino"],
+	"homepage": "https://github.com/michalp02/kino",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Michał Pasierbski"
+		},
+    {
+			"name": "Piotr Paszek"
+		},
+    {
+			"name": "Jakub Siodłak"
+		}
+	],
+	"bin": [
+		"bin/heroku-php-apache2",
+		"bin/heroku-php-nginx"
+	]
+}
