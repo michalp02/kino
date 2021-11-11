@@ -4,11 +4,11 @@ header("Content-type: text/plain");
 require '../sys/sys.php';
 if($kino->czyZalogowano())
 echo '{
-  "success": true,
+    "success": true
 }';
 else 
 echo '{
-    "success": false,
-  }';
+    "success": false
+}';
 
 ?>
