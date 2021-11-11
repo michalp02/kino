@@ -22,6 +22,6 @@ echo '{
 } else
 echo '{
     "success": false,
-    "error_msg": "Błąd wewnętrzny: brak parametru 'login' lub 'haslo'"
+    "error_msg": "Błąd wewnętrzny: brak parametru \"login\" lub \"haslo\""
 }';
 ?>
