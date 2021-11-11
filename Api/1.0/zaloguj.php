@@ -3,7 +3,8 @@
 header("Content-type: text/plain");
 require '../sys/sys.php';
 if(isset($_POST['login']) && isset($_POST['haslo'])) {
-$login = $kino->db->real_escape_string($_POST['login']);
+$login = $_POST['login'];
+$haslo = $_POST['haslo'];
 if($kino->czyZalogowano())
 echo '{
     "success": false,
