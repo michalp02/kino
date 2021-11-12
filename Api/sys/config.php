@@ -13,4 +13,12 @@ $config['db_user'] = 'kinonierodka';
 $config['db_pass'] = 'kinonierodka';
 $config['db_name'] = 'kinonierodka';
 
+/*
+W celu skorzystania z DBMS, użyj poniższych linków.
+Dane do logowania tożsame z wymaganymi do połączenia
+
+phpMyAdmin: https://pma.pasierbski.ovh
+Adminer: https://adminer.pasierbski.ovh
+*/
+
 ?>
