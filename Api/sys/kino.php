@@ -29,4 +29,8 @@ class Kino {
             return false;
     }
 
+    public function sanitize($string) {
+        return $this->db->real_escape_string($string);
+    }
+
 }

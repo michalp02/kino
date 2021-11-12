@@ -3,7 +3,7 @@
 header("Content-type: text/plain");
 require '../sys/sys.php';
 if(isset($_POST['login']) && isset($_POST['haslo'])) {
-$login = $_POST['login'];
+$login = $kino->sanitize($_POST['login']);
 $haslo = $_POST['haslo'];
 if($kino->czyZalogowano())
 echo '{
